@@ -1,0 +1,600 @@
+* {
+   margin: 0px;
+    padding: 0px;
+}
+
+
+/* INDEX */
+
+.grillaIndex {
+    display: grid;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 280%;
+}
+p, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 15%;
+    height: 15%;
+}
+
+body {
+    background-color: rgb(241, 216, 183);
+}
+
+
+header {
+    grid-area: header;
+    background-color: rgb(153, 12, 12);
+}
+
+.menuHeader ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.menuHeader ul li a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.menuHeader ul li a:hover{
+    color: black;
+    background-color: pink;
+}
+
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.imagenAnimada {
+    grid-area: info1;
+}
+
+
+.cajaBoton{
+    grid-area: info2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    width: 170px;
+    height: 100px;
+    background: rgb(153, 12, 12);
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+}
+.boton:hover{
+    background-color: black;
+}
+
+.textoInfo {
+    grid-area: info3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+
+.textoInfo img{
+   padding: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.conteinerCards{
+    grid-area: cards;
+    display: flex;
+    background-color: rgb(245, 150, 150);
+}    
+
+
+.cards img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.copyright{
+    grid-area: footer;
+    background-color: rgb(153, 12, 12);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    flex-direction: column;
+}    
+
+
+.containerRedes{
+    grid-area: redes;
+    background-color: rgb(153, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}    
+
+
+.containerRedes ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.containerRedes ul li a{
+    display: block;
+    padding: 0 10px;
+    background: grey;
+    color: white;
+    line-height: 50px;
+    font-size: 18px;
+    transition: .2s;
+}
+
+.containerRedes ul:hover a{
+    filter: blur(2px);
+}
+
+.containerRedes ul li a:hover{
+    transform: translateY(-3px) scale(1.10);
+    filter: none;
+}
+
+.containerRedes ul li .facebook:hover {
+    background-color: rgb(66 103 178) ;
+}
+
+.containerRedes ul li .instagram:hover {
+    background-color: rgb(193 53 132) ;
+}
+
+.containerRedes ul li .twitter:hover {
+    background-color: rgb(29 161 242) ;
+}
+
+.containerRedes ul li .linkedin:hover {
+    background-color: rgb(40,103,178) ;
+}
+
+/* CONTACTO */
+.tituloContacto{
+    margin: 15px;
+    text-align: center;
+}
+.viasContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.viasContacto ul{
+    display: flex;
+    list-style-type: none;
+    margin: 5px;
+}
+.formularioContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.formularioContacto label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.itemClases{
+    background-color: rgb(245, 150, 150);
+}
+
+
+
+/* XS SM */
+@media only screen and (max-width: 600px) {
+
+   .grillaIndex {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header"
+        "header"
+        "header"
+        "titulo"
+        "info1"
+        "info2"
+        "info3"
+        "cards"
+        "cards"
+        "cards"
+        "footer"
+        "redes";
+
+   }
+   
+   header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    }
+
+    .containerLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 40%;    
+        height: 50%;
+    }
+
+    .menuHeader ul {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuHeader ul li{
+        padding: 5px 0;
+    }
+
+    .imagenAnimada img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .textoInfo p {
+        margin-left: 15px;
+    }
+
+    .conteinerCards {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 770px;
+    }
+
+    .cards{
+        text-align: center;
+        height: 210px;
+        margin-top: 30px;
+    }    
+
+    .cards p{
+        font-size: 13px;
+    }
+    
+
+    /* Galería */
+
+    .containerGaleria{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 1rem;
+        padding: 20px;
+    }
+
+    .galeriaImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    
+    }
+
+    .galeriaItem:nth-child(8){
+        grid-column-start: span 2;
+    }
+    .galeriaItem:nth-child(6){
+        grid-row-start: span 2;
+    }
+    .galeriaItem:nth-child(9){
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
+    /* CONTACTO */
+
+
+    .infoFormulario{
+        margin: 40px;
+    }
+
+    .viasContacto p{
+        text-align: center;
+        margin: 10px;
+    }
+
+
+    .viasContacto ul li{
+        padding: 60px;
+    }
+
+    .formularioContacto input{
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #mensajeUsuario{
+        padding: 50px;
+    }
+
+    /* SOBRE NOSOTROS */
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+
+    .descripcion img{
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .mapaGim{
+        width: 80%;
+        margin: 30px;
+      
+    }
+
+    /* CLASES */
+
+    .tituloClases{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .tituloClases p{
+        padding: 15px;
+    }
+
+    .gridArticulosClases {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .itemClases img{
+        width: 100%;
+        height: 60%;
+    }
+    .videoClase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .videoClase iframe{
+        width: 90%;
+        height: 80%
+    }
+
+}
+
+    
+
+
+/* LG */
+@media only screen and (min-width: 600px) {
+
+    .grillaIndex {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "header header header"
+        "titulo titulo titulo"
+        "info1 info2 info3"
+        "cards cards cards"
+        "footer redes redes";
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+    }
+
+    .logo {
+        margin-left: 50px;
+        width: 200px;
+        height: 100px;
+    }
+
+    .menuHeader ul li {
+        padding-left: 20px;
+        margin-right: 45px;
+    }
+    
+    .imagenAnimada img {
+        width: 600px;
+        height: 600px;
+        margin-left: 50px;
+    }
+    
+    .textoInfo p {
+        margin-right: 30px;
+    }
+
+    .cards{
+        text-align: center;
+        height: 400px;
+        margin-top: 15px;
+    }    
+
+    .cards p{
+        font-size: 15px;
+    }
+    
+
+     /* Galería */
+
+     .containerGaleria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 300px 300px 300px;
+        gap: 1rem;
+        padding: 20px;
+
+     }
+
+    .galeriaImg{
+        width:90%;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .galeriaItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .galeriaItem:nth-child(5){
+        grid-row-start: span 2;
+    }
+    .galeriaItem:nth-child(6){
+        grid-row-start: span 2;
+    }
+
+    .galeriaItem:nth-child(9){
+        grid-column-start: span 2;
+    }
+
+    /* CONTACTO */
+
+    .viasContacto ul li{
+        padding: 100px;
+    }
+    .infoFormulario{
+        margin-bottom: 40px;
+        display: flex;
+   
+    }
+    .infoFormulario p{
+        padding: 55px;
+    }
+    .formularioContacto input{
+      width: 20%;
+      margin: 10px;
+    }
+    #mensajeUsuario{
+        height: 200px;
+        margin: 25px 0;
+    }
+
+    .botonesFormulario{
+        display: flex;
+        width: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .descripcion img{
+        width: 500px;
+        height: 300px;
+        padding: 15px;
+    }
+    .descripcion p {
+        padding:15px;
+    }
+
+    .iframeMapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0;
+    }
+    .mapaGim{
+        width: 90%;
+
+      
+    }
+
+    /* CLASES */
+
+    .gridArticulosClases {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+   
+
+    .itemClases {
+        display: flex;
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tituloClases p{
+        text-align: center;
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .itemClases p{
+        padding: 10px;
+    }
+    .itemClases img{
+        width: 80%;
+        height: 70%;
+    }
+
+    .videoClase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .videoClase iframe{
+        width: 90%;
+        height: 600px
+    }
+}
+
