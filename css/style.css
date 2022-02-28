@@ -1,46 +1,27 @@
 * {
-   margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
 
+
 /* INDEX */
-
-.grillaIndex {
-    display: grid;
-}
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 280%;
-}
-p, h2, h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-img {
-    width: 15%;
-    height: 15%;
-}
-
-body {
-    background-color: rgb(241, 216, 183);
-}
-
-
+ 
 header {
-    grid-area: header;
     background-color: rgb(153, 12, 12);
+    display: flex;
+    
 }
 
 .menuHeader ul {
     display: flex;
     list-style-type: none;
+    padding: 15px;
 }
-
 
 .menuHeader ul li a{
     font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     text-decoration: none;
     color: white;
 }
@@ -50,26 +31,16 @@ header {
     background-color: pink;
 }
 
-
 .titulo {
-    grid-area: titulo;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-
+    margin-top: 70px;
 }
 
-.imagenAnimada {
-    grid-area: info1;
-}
-
-
-.cajaBoton{
-    grid-area: info2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.textoInfo img{
+    padding: 50px;
+    width: 500px;
 }
 
 .boton{
@@ -84,58 +55,45 @@ header {
     text-decoration: none;
     color: white;
 }
+
 .boton:hover{
     background-color: black;
 }
 
 .textoInfo {
-    grid-area: info3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
-}
-
-
-.textoInfo img{
-   padding: 30px;
-    width: 200px;
-    height: 200px;
 }
 
 .containerCards{
-    grid-area: cards;
     display: flex;
-    background-color: rgb(245, 150, 150);
-}    
-
-
-.cards img{
-    width: 50%;
-    height: 50%;
+}
+.card {
+    max-height: 480px;
 }
 
+footer {
+    background: rgb(153, 12, 12);
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
 
 .copyright{
-    grid-area: footer;
-    background-color: rgb(153, 12, 12);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     flex-direction: column;
 }    
 
-
 .containerRedes{
-    grid-area: redes;
-    background-color: rgb(153, 12, 12);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+
 }    
 
 
@@ -146,6 +104,8 @@ header {
     height: 50px;
     text-align: center;
 }
+
+
 .containerRedes ul li a{
     display: block;
     padding: 0 10px;
@@ -172,7 +132,6 @@ header {
 .containerRedes ul li .instagram:hover {
     background-color: rgb(193 53 132) ;
 }
-
 .containerRedes ul li .twitter:hover {
     background-color: rgb(29 161 242) ;
 }
@@ -181,11 +140,16 @@ header {
     background-color: rgb(40,103,178) ;
 }
 
+
+
+
 /* CONTACTO */
-.tituloContacto{
+
+.tituloContacto {
     margin: 15px;
     text-align: center;
 }
+
 .viasContacto{
     display: flex;
     justify-content: center;
@@ -197,16 +161,13 @@ header {
     list-style-type: none;
     margin: 5px;
 }
-.formularioContacto{
+
+
+.formularioMain {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-}
-.formularioContacto label{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
 }
 
 
@@ -219,32 +180,25 @@ header {
 /* XS SM */
 @media only screen and (max-width: 600px) {
 
-   .grillaIndex {
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "header"
-        "header"
-        "header"
-        "titulo"
-        "info1"
-        "info2"
-        "info3"
-        "cards"
-        "cards"
-        "cards"
-        "footer"
-        "redes";
-
-   }
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 280%;
+    }
    
    header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
     }
+    
+    .logo{
+        width: 40%;
+        margin-top: 15px;
+    }
+
 
     .containerLogo {
         display: flex;
@@ -252,44 +206,45 @@ header {
         align-items: center;
     }
 
-    .logo {
-        width: 40%;    
-        height: 50%;
-    }
-
     .menuHeader ul {
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
     .menuHeader ul li{
-        padding: 5px 0;
+        padding: 10px 0;
     }
 
-    .imagenAnimada img {
+    .containerMain {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagenAnimada {
         width: 100%;
         height: 100%;
     }
-
-    .textoInfo p {
-        margin-left: 15px;
+   
+    .textoInfo{
+        width: 300px;
     }
 
-    .conteinerCards {
-        justify-content: center;
+    .textoInfo img {
+        width: 400px;
+    }
+
+    .containerCards{
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        height: 770px;
+        margin: 40px 0px;
     }
 
-    .cards{
-        text-align: center;
-        height: 210px;
-        margin-top: 30px;
-    }    
-
-    .cards p{
-        font-size: 13px;
+    .card{
+        margin: 25px 0;
     }
     
 
@@ -337,23 +292,31 @@ header {
         padding: 60px;
     }
 
-    .formularioContacto input{
-        margin: 15px;
-        padding: 10px;
+
+
+    .formularioMain div input {
+        width: 300px;
     }
 
-    #mensajeUsuario{
-        padding: 50px;
+    .formularioMain div textarea{
+        width: 300px;
+        height: 100px;
     }
+
+    .botonForm {
+        padding: 15px;
+        margin: 0 0 15px 200px;
+    }
+
+
 
     /* SOBRE NOSOTROS */
-    .descripcion{
+
+    .descripcion {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 20px;
-
     }
 
     .descripcion img{
@@ -381,16 +344,21 @@ header {
         padding: 15px;
     }
 
-    .gridArticulosClases {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    .cardsClases1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .cardsClases2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
-    .itemClases img{
-        width: 100%;
-        height: 60%;
-    }
     .videoClase{
         display: flex;
         justify-content: center;
@@ -400,7 +368,7 @@ header {
     .videoClase iframe{
         width: 90%;
         height: 80%
-    }
+    } 
 
 }
 
@@ -410,43 +378,49 @@ header {
 /* LG */
 @media only screen and (min-width: 600px) {
 
-    .grillaIndex {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "header header header"
-        "titulo titulo titulo"
-        "info1 info2 info3"
-        "cards cards cards"
-        "footer redes redes";
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 350%;
     }
 
     header {
-        display: flex;
         justify-content: space-between;
         align-items: center;
         height: 150px;
     }
 
     .logo {
-        margin-left: 50px;
-        width: 200px;
-        height: 100px;
+        width: 300px;
+        padding: 30px;
     }
-
+        
     .menuHeader ul li {
-        padding-left: 20px;
         margin-right: 45px;
+        padding: 30px;
     }
     
     .imagenAnimada img {
         width: 600px;
         height: 600px;
         margin-left: 50px;
+        
     }
     
-    .textoInfo p {
-        margin-right: 30px;
+    .containerMain{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
     }
+
+
+    .containerCards{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+    }    
+    
 
     .cards{
         text-align: center;
@@ -497,31 +471,36 @@ header {
     /* CONTACTO */
 
     .viasContacto ul li{
-        padding: 100px;
+        margin: 45px;
+        padding: 0 150px;
     }
     .infoFormulario{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         display: flex;
    
     }
     .infoFormulario p{
         padding: 55px;
     }
-    .formularioContacto input{
-      width: 20%;
-      margin: 10px;
-    }
-    #mensajeUsuario{
-        height: 200px;
-        margin: 25px 0;
+
+
+    .formularioMain div input {
+        width: 500px;    
     }
 
-    .botonesFormulario{
-        display: flex;
-        width: 500px;
-        justify-content: center;
-        align-items: center;
+    .formularioMain div textarea{
+        width: 500px;   
+        height: 300px;
     }
+
+    .botonForm {
+        padding: 15px;
+        margin: 0 0 15px 430px;
+    }
+
+    
+
+
 
     /* SOBRE NOSOTROS */
 
@@ -541,6 +520,11 @@ header {
         padding:15px;
     }
 
+    .descripcion button {
+        width: 400px;
+        height: 50px;
+    }
+
     .iframeMapa{
         display: flex;
         justify-content: center;
@@ -555,35 +539,25 @@ header {
 
     /* CLASES */
 
-    .gridArticulosClases {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-
-    }
-   
-
-    .itemClases {
-        display: flex;
-        width: 100%;
-        height: 80%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
     .tituloClases p{
         text-align: center;
-        padding: 10px;
-        font-family: 'Poppins', sans-serif;
     }
-    .itemClases p{
-        padding: 10px;
+
+    .cardsClases1 {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
     }
-    .itemClases img{
-        width: 80%;
-        height: 70%;
+    .cardsClases2 {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 15px;
+    }
+
+    .card {
+        text-align: center;
     }
 
     .videoClase{
@@ -596,5 +570,17 @@ header {
         width: 90%;
         height: 600px
     }
+
+   /*  
+    .videoClase{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .videoClase iframe{
+        width: 90%;
+        height: 600px
+    } */
 }
 
