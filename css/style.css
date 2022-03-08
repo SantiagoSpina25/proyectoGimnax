@@ -74,6 +74,8 @@ header {
     max-height: 480px;
 }
 
+/* FOOTER */
+
 footer {
     background: rgb(153, 12, 12);
     display: flex;
@@ -245,6 +247,11 @@ footer {
 
     .card{
         margin: 25px 0;
+    }
+
+    footer {
+        height: 200px;
+        text-align: center;
     }
     
 
