@@ -1,0 +1,108 @@
+@import 'variables.scss';
+@import 'index.scss';
+@import 'galeria.scss';
+@import 'contacto.scss';
+@import 'sobrenosotros.scss';
+@import 'clases.scss';
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background: $colorMain;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+.copyright{
+    color: $colorTexto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}    
+
+.containerRedes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+
+            a {
+                display: block;
+                padding: 0 10px;
+                background: grey;
+                color: $colorTexto;
+                line-height: 50px;
+                font-size: 18px;
+                transition: .2s;
+            }
+        }
+
+        
+    }
+
+}    
+
+.containerRedes {
+
+    ul:hover{
+        
+        a{
+            filter: blur(2px);
+        }
+    }
+
+    ul{
+
+        li{
+            a:hover{
+                transform: translateY(-3px) scale(1.10);
+                filter: none;
+            }
+
+            .facebook:hover {
+                background: rgb(66, 103, 178) ;
+            }
+
+            .instagram:hover {
+                background: rgb(193, 53, 132) ;
+            }
+
+            .twitter:hover {
+                background: rgb(29, 161, 242) ;
+            }
+
+            .linkedin:hover {
+                background: rgb(40,103,178) ;
+            }
+
+        }
+    }
+
+}
+

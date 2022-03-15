@@ -1,593 +1,366 @@
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-
 /* INDEX */
- 
 header {
-    background-color: rgb(153, 12, 12);
-    display: flex;
-    
-}
+  background-color: #990c0c;
+  display: flex; }
 
 .menuHeader ul {
-    display: flex;
-    list-style-type: none;
-    padding: 15px;
-}
-
-.menuHeader ul li a{
+  display: flex;
+  list-style-type: none;
+  padding: 15px; }
+  .menuHeader ul li a {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-decoration: none;
-    color: white;
-}
-
-.menuHeader ul li a:hover{
+    color: white; }
+  .menuHeader ul li a:hover {
     color: black;
-    background-color: pink;
-}
+    background-color: pink; }
 
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-}
+.textoInfo img {
+  padding: 50px;
+  width: 500px; }
 
-.textoInfo img{
-    padding: 50px;
-    width: 500px;
-}
-
-.boton{
-    width: 170px;
-    height: 100px;
-    background: rgb(153, 12, 12);
-    border-radius: 15px;
-    margin-bottom: 40px;
-}
-
-.boton a{
+.boton {
+  width: 170px;
+  height: 100px;
+  background: #990c0c;
+  border-radius: 15px;
+  margin-bottom: 40px; }
+  .boton a {
     text-decoration: none;
-    color: white;
-}
-
-.boton:hover{
-    background-color: black;
-}
+    color: white; }
+  .boton:hover {
+    background-color: black; }
 
 .textoInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.containerCards {
+  display: flex; }
+
+.card {
+  max-height: 480px; }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 280%; }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .logo {
+    width: 40%;
+    margin-top: 15px; }
+  .containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .menuHeader ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .menuHeader ul li {
+      padding: 10px 0; }
+  .containerMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; }
+  .imagenAnimada {
+    width: 100%;
+    height: 100%; }
+  .textoInfo {
+    width: 300px; }
+    .textoInfo img {
+      width: 400px; }
+  .containerCards {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px; }
+  .card {
+    margin: 25px 0; }
+  footer {
+    height: 200px;
+    text-align: center; } }
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 350%; }
+  header {
+    justify-content: space-between;
+    align-items: center;
+    height: 150px; }
+  .logo {
+    width: 300px;
+    padding: 30px; }
+  .menuHeader ul li {
+    margin-right: 45px;
+    padding: 30px; }
+  .imagenAnimada img {
+    width: 600px;
+    height: 600px;
+    margin-left: 50px; }
+  .containerMain {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.containerCards{
-    display: flex;
-}
-.card {
-    max-height: 480px;
-}
-
-/* FOOTER */
-
-footer {
-    background: rgb(153, 12, 12);
+    padding: 30px; }
+  .containerCards {
     display: flex;
     justify-content: space-evenly;
-    height: 150px;
-}
+    align-items: center;
+    margin-bottom: 50px; }
+  .cards {
+    text-align: center;
+    height: 400px;
+    margin-top: 15px; }
+    .cards p {
+      font-size: 15px; } }
 
-.copyright{
-    color: white;
+@media only screen and (max-width: 600px) {
+  .containerGaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 20px; }
+  .galeriaImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeriaItem:nth-child(8) {
+    grid-column-start: span 2; }
+  .galeriaItem:nth-child(6) {
+    grid-row-start: span 2; }
+  .galeriaItem:nth-child(9) {
+    grid-row-start: span 2;
+    grid-column-start: span 2; } }
+
+@media only screen and (min-width: 600px) {
+  .containerGaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1rem;
+    padding: 20px; }
+  .galeriaItem {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .galeriaItem img {
+      width: 100%;
+      height: 100%; }
+  .galeriaItem:nth-child(5) {
+    grid-row-start: span 2; }
+  .galeriaItem:nth-child(6) {
+    grid-row-start: span 2; }
+  .galeriaItem:nth-child(9) {
+    grid-column-start: span 2; } }
+
+/* CONTACTO */
+.tituloContacto {
+  margin: 15px;
+  text-align: center; }
+
+.viasContacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .viasContacto ul {
+    display: flex;
+    list-style-type: none;
+    margin: 5px; }
+
+.formularioMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.itemClases {
+  background-color: #f59696; }
+
+@media only screen and (max-width: 600px) {
+  .infoFormulario {
+    margin: 40px; }
+  .viasContacto p {
+    text-align: center;
+    margin: 10px; }
+  .viasContacto ul li {
+    padding: 60px; }
+  .formularioMain div input {
+    width: 300px; }
+  .formularioMain div textarea {
+    width: 300px;
+    height: 100px; }
+  .botonForm {
+    padding: 15px;
+    margin: 0 0 15px 200px; } }
+
+@media only screen and (min-width: 600px) {
+  .viasContacto ul li {
+    margin: 45px;
+    padding: 0 150px; }
+  .infoFormulario {
+    margin-bottom: 20px;
+    display: flex; }
+    .infoFormulario p {
+      padding: 55px; }
+  .formularioMain div input {
+    width: 500px; }
+  .formularioMain div textarea {
+    width: 500px;
+    height: 300px; }
+  .botonForm {
+    padding: 15px;
+    margin: 0 0 15px 430px; } }
+
+@media only screen and (max-width: 600px) {
+  .descripcion {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}    
+    flex-direction: column; }
+    .descripcion img {
+      width: 300px;
+      height: 200px;
+      padding: 15px; }
+  .mapaGim {
+    width: 80%;
+    margin: 30px; } }
 
-.containerRedes{
+@media only screen and (min-width: 600px) {
+  .descripcion {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px; }
+    .descripcion img {
+      width: 500px;
+      height: 300px;
+      padding: 15px; }
+    .descripcion p {
+      padding: 15px; }
+    .descripcion button {
+      width: 400px;
+      height: 50px; }
+  .iframeMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0; }
+  .mapaGim {
+    width: 90%; } }
 
-}    
+@media only screen and (max-width: 600px) {
+  .subtituloClases {
+    font-size: 15px;
+    margin: 25px; }
+  .cardClases1, .cardClases2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .videoClase {
+    display: flex;
+    justify-content: center; }
+    .videoClase iframe {
+      margin: 15px;
+      width: 425px;
+      height: 200px; } }
 
+@media only screen and (min-width: 600px) {
+  .cajaTitulosClase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .subtituloClases {
+    font-size: 20px;
+    margin: 25px; }
+  .cardClases1 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px; }
+  .cardClases2 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px; }
+  .videoClase {
+    display: flex;
+    justify-content: center; }
+    .videoClase iframe {
+      margin: 50px 0;
+      width: 1325px;
+      height: 500px; } }
 
-.containerRedes ul li{
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px; }
+
+/* FOOTER */
+footer {
+  background: #990c0c;
+  display: flex;
+  justify-content: space-evenly;
+  height: 150px; }
+
+.copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.containerRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .containerRedes ul li {
     display: inline-block;
     margin: 0 5px;
     width: 50px;
     height: 50px;
-    text-align: center;
-}
+    text-align: center; }
+    .containerRedes ul li a {
+      display: block;
+      padding: 0 10px;
+      background: grey;
+      color: white;
+      line-height: 50px;
+      font-size: 18px;
+      transition: .2s; }
 
+.containerRedes ul:hover a {
+  filter: blur(2px); }
 
-.containerRedes ul li a{
-    display: block;
-    padding: 0 10px;
-    background: grey;
-    color: white;
-    line-height: 50px;
-    font-size: 18px;
-    transition: .2s;
-}
-
-.containerRedes ul:hover a{
-    filter: blur(2px);
-}
-
-.containerRedes ul li a:hover{
-    transform: translateY(-3px) scale(1.10);
-    filter: none;
-}
+.containerRedes ul li a:hover {
+  transform: translateY(-3px) scale(1.1);
+  filter: none; }
 
 .containerRedes ul li .facebook:hover {
-    background-color: rgb(66 103 178) ;
-}
+  background: #4267b2; }
 
 .containerRedes ul li .instagram:hover {
-    background-color: rgb(193 53 132) ;
-}
+  background: #c13584; }
+
 .containerRedes ul li .twitter:hover {
-    background-color: rgb(29 161 242) ;
-}
+  background: #1da1f2; }
 
 .containerRedes ul li .linkedin:hover {
-    background-color: rgb(40,103,178) ;
-}
-
-
-
-
-/* CONTACTO */
-
-.tituloContacto {
-    margin: 15px;
-    text-align: center;
-}
-
-.viasContacto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.viasContacto ul{
-    display: flex;
-    list-style-type: none;
-    margin: 5px;
-}
-
-
-.formularioMain {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.itemClases{
-    background-color: rgb(245, 150, 150);
-}
-
-
-
-/* XS SM */
-@media only screen and (max-width: 600px) {
-
-    h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 280%;
-    }
-   
-   header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-
-    }
-    
-    .logo{
-        width: 40%;
-        margin-top: 15px;
-    }
-
-
-    .containerLogo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menuHeader ul {
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .menuHeader ul li{
-        padding: 10px 0;
-    }
-
-    .containerMain {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .imagenAnimada {
-        width: 100%;
-        height: 100%;
-    }
-   
-    .textoInfo{
-        width: 300px;
-    }
-
-    .textoInfo img {
-        width: 400px;
-    }
-
-    .containerCards{
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        margin: 40px 0px;
-    }
-
-    .card{
-        margin: 25px 0;
-    }
-
-    footer {
-        height: 200px;
-        text-align: center;
-    }
-    
-
-    /* Galería */
-
-    .containerGaleria{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        gap: 1rem;
-        padding: 20px;
-    }
-
-    .galeriaImg{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    
-    }
-
-    .galeriaItem:nth-child(8){
-        grid-column-start: span 2;
-    }
-    .galeriaItem:nth-child(6){
-        grid-row-start: span 2;
-    }
-    .galeriaItem:nth-child(9){
-        grid-row-start: span 2;
-        grid-column-start: span 2;
-    }
-
-    /* CONTACTO */
-
-
-    .infoFormulario{
-        margin: 40px;
-    }
-
-    .viasContacto p{
-        text-align: center;
-        margin: 10px;
-    }
-
-
-    .viasContacto ul li{
-        padding: 60px;
-    }
-
-
-
-    .formularioMain div input {
-        width: 300px;
-    }
-
-    .formularioMain div textarea{
-        width: 300px;
-        height: 100px;
-    }
-
-    .botonForm {
-        padding: 15px;
-        margin: 0 0 15px 200px;
-    }
-
-
-
-    /* SOBRE NOSOTROS */
-
-    .descripcion {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .descripcion img{
-        width: 300px;
-        height: 200px;
-        padding: 15px;
-    }
-
-    .mapaGim{
-        width: 80%;
-        margin: 30px;
-      
-    }
-
-    /* CLASES */
-
-    .tituloClases{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 20px;
-    }
-    .tituloClases p{
-        padding: 15px;
-    }
-
-    .cardsClases1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    .cardsClases2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .videoClase{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-    }
-    .videoClase iframe{
-        width: 90%;
-        height: 80%
-    } 
-
-}
-
-    
-
-
-/* LG */
-@media only screen and (min-width: 600px) {
-
-    h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 350%;
-    }
-
-    header {
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-    }
-
-    .logo {
-        width: 300px;
-        padding: 30px;
-    }
-        
-    .menuHeader ul li {
-        margin-right: 45px;
-        padding: 30px;
-    }
-    
-    .imagenAnimada img {
-        width: 600px;
-        height: 600px;
-        margin-left: 50px;
-        
-    }
-    
-    .containerMain{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-    }
-
-
-    .containerCards{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 50px;
-    }    
-    
-
-    .cards{
-        text-align: center;
-        height: 400px;
-        margin-top: 15px;
-    }    
-
-    .cards p{
-        font-size: 15px;
-    }
-    
-
-     /* Galería */
-
-     .containerGaleria{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-        grid-template-rows: 300px 300px 300px;
-        gap: 1rem;
-        padding: 20px;
-
-     }
-
-    .galeriaImg{
-        width:90%;
-        height: 90%;
-        object-fit: cover;
-    }
-
-    .galeriaItem{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .galeriaItem:nth-child(5){
-        grid-row-start: span 2;
-    }
-    .galeriaItem:nth-child(6){
-        grid-row-start: span 2;
-    }
-
-    .galeriaItem:nth-child(9){
-        grid-column-start: span 2;
-    }
-
-    /* CONTACTO */
-
-    .viasContacto ul li{
-        margin: 45px;
-        padding: 0 150px;
-    }
-    .infoFormulario{
-        margin-bottom: 20px;
-        display: flex;
-   
-    }
-    .infoFormulario p{
-        padding: 55px;
-    }
-
-
-    .formularioMain div input {
-        width: 500px;    
-    }
-
-    .formularioMain div textarea{
-        width: 500px;   
-        height: 300px;
-    }
-
-    .botonForm {
-        padding: 15px;
-        margin: 0 0 15px 430px;
-    }
-
-    
-
-
-
-    /* SOBRE NOSOTROS */
-
-    .descripcion{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-    
-    .descripcion img{
-        width: 500px;
-        height: 300px;
-        padding: 15px;
-    }
-    .descripcion p {
-        padding:15px;
-    }
-
-    .descripcion button {
-        width: 400px;
-        height: 50px;
-    }
-
-    .iframeMapa{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 35px 0;
-    }
-    .mapaGim{
-        width: 90%;
-
-      
-    }
-
-    /* CLASES */
-
-    .tituloClases p{
-        text-align: center;
-    }
-
-    .cardsClases1 {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        margin: 15px;
-    }
-    .cardsClases2 {
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        margin: 15px;
-    }
-
-    .card {
-        text-align: center;
-    }
-
-    .videoClase{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-    }
-    .videoClase iframe{
-        width: 90%;
-        height: 600px
-    }
-
-   /*  
-    .videoClase{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 15px;
-    }
-    .videoClase iframe{
-        width: 90%;
-        height: 600px
-    } */
-}
-
+  background: #2867b2; }
