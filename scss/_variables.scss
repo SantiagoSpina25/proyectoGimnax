@@ -1,5 +1,8 @@
-
-
-
 $colorMain: rgb(153, 12, 12);
 $colorTexto: rgb(255, 255, 255);
+$colorSecond: rgb(21, 69, 156);
+
+@mixin btnSize ($w, $h) {
+    width: $w;
+    height: $h;
+}

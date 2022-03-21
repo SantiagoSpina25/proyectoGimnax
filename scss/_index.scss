@@ -40,23 +40,6 @@ header {
 
 
 
-.boton{
-    width: 170px;
-    height: 100px;
-    background: $colorMain;
-    border-radius: 15px;
-    margin-bottom: 40px;
-
-    a {
-        text-decoration: none;
-        color: $colorTexto;
-    }
-
-    &:hover {
-        background-color: black;
-    }
-}
-
 
 
 .textoInfo {

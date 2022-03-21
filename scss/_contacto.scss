@@ -27,9 +27,8 @@
 }
 
 
-.itemClases{
-    background-color: rgb(245, 150, 150);
-}
+
+
 
 @media only screen and (max-width: 600px) {
     .infoFormulario{
@@ -72,6 +71,12 @@
 }
 
 @media only screen and (min-width: 600px) {
+
+    .imagenAnimada {
+        width: 40%;
+        height: 40%;
+    }
+
 
     .viasContacto {
         ul {
