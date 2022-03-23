@@ -42,6 +42,11 @@
 }
 
 
+.card:hover {
+    transition: .4s;
+    transform: scale(1.05);
+}
+
 /* FOOTER */
 
 footer {

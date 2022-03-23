@@ -318,6 +318,10 @@ header {
   color: white;
   background-color: #15459c; }
 
+.card:hover {
+  transition: .4s;
+  transform: scale(1.05); }
+
 /* FOOTER */
 footer {
   background: #990c0c;
