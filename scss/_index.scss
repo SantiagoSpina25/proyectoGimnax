@@ -1,53 +1,21 @@
-/* INDEX */
+@import 'variables.scss';
  
-header {
-    background-color: $colorMain;
-    display: flex;
+h1 {
+    font-family: $fuenteTextos;
     
 }
 
-.menuHeader {
+.containerBoton {
+    a {
+        font-family: $fuenteTextos;
+        font-size: 20px;
+    }
 
-    ul {
-        display: flex;
-        list-style-type: none;
-        padding: 15px;
-
-        li{
-            a{
-                font-family: 'Poppins', sans-serif;
-                font-weight: 600;
-                text-decoration: none;
-                color: $colorTexto;
-            }
-
-            a:hover {
-                color: black;
-                background-color: pink;
-            }
-        }
+    .boton {
+        color: $colorTexto;
     }
 }
 
-
-
-.textoInfo{
-    img {
-        padding: 50px;
-        width: 500px;
-    }
-}
-
-
-
-
-
-.textoInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
 .containerCards{
     display: flex;
@@ -60,7 +28,6 @@ header {
 
 @media only screen and (max-width: 600px) {
     h1 {
-        font-family: 'Poppins', sans-serif;
         font-size: 280%;
     }
    
@@ -110,13 +77,32 @@ header {
         width: 100%;
         height: 100%;
     }
+
+    .containerBoton {
+
+        .boton{
+            @include btnSize (200px, 80px);
+        }
+        
+    }
+    
    
     .textoInfo{
-        width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            text-align: center;
+        }
 
         img {
-            width: 400px;
+            width: 350px;
         }
+
+        
     }
 
     .containerCards{
@@ -140,48 +126,121 @@ header {
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
     h1 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 350%;
+        font-size: 7vw
     }
 
-    header {
-        justify-content: space-between;
-        align-items: center;
-        height: 150px;
-    }
 
-    .logo {
-        width: 300px;
-        padding: 30px;
-    }
-        
-    .menuHeader{
-
-        ul{
-            li{
-                margin-right: 45px;
-                padding: 30px;
-            }
-        }
-    }
-    
-    .imagenAnimada{
-        img{
-            width: 600px;
-            height: 600px;
-            margin-left: 50px;
-        }
-    }
-    
     .containerMain{
+
+        margin-top: 30px;
+
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 30px;
+        padding: 10px;
+
+        .imagenAnimada{
+
+            img{
+                width: 250px;
+                height: 250px;
+               
+            }
+        }
+
+        .textoInfo {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            img{
+                width: 220px;
+                height: 160px;
+            }
+
+            p {
+                margin-left: 30px
+            }
+        }
+        .containerBoton {
+
+            .boton{
+                @include btnSize (130px, 100px);
+            }
+            
+        }
     }
 
+    .containerCards {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 10px;
+    }
+    
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+    h1 {
+        font-family: $fuenteTextos;
+        font-size: 400%;
+    }
+
+    
+    .containerMain{
+
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .imagenAnimada{
+
+            img{
+                width: 480px;
+                height: 480px;
+               
+            }
+        }
+
+        .textoInfo {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+
+            img{
+                width: 300px;
+                height: 200px;
+            }
+
+            p {
+                margin-left: 30px
+            }
+        }
+        .containerBoton {
+
+            .boton{
+                @include btnSize (160px, 90px);
+            }
+            
+        }
+    }
 
     .containerCards{
         display: flex;

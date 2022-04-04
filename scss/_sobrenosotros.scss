@@ -1,3 +1,6 @@
+@import 'variables.scss';
+
+
 
 @media only screen and (max-width: 600px){
 
@@ -26,7 +29,44 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+    .descripcion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+
+        img {
+            width: 300px;
+            height: 200px;
+            padding: 15px;
+        }
+
+        p {
+            padding:15px;
+        }
+
+        button {
+            @include btnSize (300px, 150px);
+            color: $colorTexto;
+        }
+    }
+
+    .iframeMapa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 35px 0;
+    }
+    .mapaGim{
+        width: 90%;
+
+      
+    }
+}
+
+@media only screen and (min-width: 992px) {
 
     .descripcion{
         display: flex;

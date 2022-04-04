@@ -1,4 +1,5 @@
-/* CONTACTO */
+@import 'variables.scss';
+
 
 .tituloContacto {
     margin: 15px;
@@ -70,7 +71,53 @@
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px){
+    
+    .imagenAnimada {
+        width: 40%;
+        height: 40%;
+    }
+
+
+    .viasContacto {
+        ul {
+            li{
+                margin: 45px;
+                padding: 0 150px;
+            }
+        }
+    }
+    
+    .infoFormulario{
+        margin-bottom: 20px;
+        display: flex;
+
+       p {
+            padding: 55px;
+       }
+   
+    }
+    
+    .formularioMain {
+        div {
+            input {
+                width: 500px;   
+            }
+
+            textarea {
+                width: 500px;   
+                height: 300px;
+            }
+        }
+    }
+
+    .botonForm {
+        padding: 15px;
+        margin: 0 0 15px 430px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
 
     .imagenAnimada {
         width: 40%;

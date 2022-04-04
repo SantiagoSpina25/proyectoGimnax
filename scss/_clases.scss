@@ -1,3 +1,4 @@
+@import 'variables.scss';
 
 
 
@@ -30,7 +31,51 @@
 
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+
+    .cajaTitulosClase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .subtituloClases{
+        font-size: 20px;
+        margin: 25px;
+     }
+
+    .cardClases1 {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px;
+    }
+    .cardClases2 {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px;
+    }
+
+
+    .videoClase {
+
+        display: flex;
+        justify-content: center;
+    
+        iframe {
+            margin: 50px 10px;
+            width: 1325px;
+            height: 500px;
+        }
+     }
+
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
 
     .cajaTitulosClase {
         display: flex;
